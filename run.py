@@ -49,7 +49,6 @@ such as a POST, or the other methods DELETE or PUT,
 then we need to explicitly state that our route can accept that.
 """
 
-
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
